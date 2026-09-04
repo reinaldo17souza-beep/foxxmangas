@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FoxxMangas Publisher</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="rail"></div>
+  <div class="wrap">
+    <p class="eyebrow">FoxxMangas</p>
+    <h1>FoxxMangas Publisher</h1>
+    <p class="lead">
+      Ferramenta de publicação usada por um único criador para postar os
+      próprios vídeos curtos sobre mangá, manhwa e manhua nas contas dele.
+    </p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section>
+    <h2>O que a ferramenta faz</h2>
+    <p>
+      O FoxxMangas Publisher produz e publica vídeos curtos em formato vertical
+      sobre obras de mangá, manhwa e manhua. Ela roda localmente, na máquina do
+      criador, e publica apenas nas contas que o próprio criador autoriza.
+    </p>
+    <p>
+      Não é um serviço para terceiros. Não existe cadastro, não há outros
+      usuários, e a ferramenta não age em nome de ninguém além do operador.
+    </p>
+  </section>
+
+  <section>
+    <h2>Como o conteúdo é produzido</h2>
+    <ul>
+      <li>
+        <strong>Dados.</strong> As informações sobre as obras — títulos, gêneros,
+        número de capítulos, datas, sinopses — vêm de catálogos públicos com API
+        documentada, hoje AniList e MangaDex, usados dentro dos termos de cada um.
+      </li>
+      <li>
+        <strong>Texto.</strong> Cada roteiro é escrito a partir desses dados e
+        passa por validação automática: afirmação sem fonte no catálogo não entra
+        no vídeo.
+      </li>
+      <li>
+        <strong>Imagem.</strong> Os quadros são gerados pela ferramenta, com
+        tipografia e layout próprios. Não republicamos páginas, capítulos,
+        cenas ou diálogos das obras.
+      </li>
+      <li>
+        <strong>Capas.</strong> Quando uma capa aparece, ela vem do catálogo de
+        origem e é sempre creditada no próprio quadro.
+      </li>
+      <li>
+        <strong>Narração.</strong> Voz sintetizada, gerada localmente.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Integração com o TikTok</h2>
+    <p>
+      A ferramenta usa o Login Kit para que o criador autorize a própria conta, e
+      a Content Posting API para enviar o arquivo de vídeo já finalizado. Antes de
+      cada publicação ela consulta as informações do criador, de modo que a conta
+      de destino e as opções de publicação sejam confirmadas.
+    </p>
+    <p>
+      Os tokens de acesso ficam cifrados na máquina do criador e não são enviados
+      a nenhum outro lugar.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contato</h2>
+    <p>
+      Dúvidas sobre esta ferramenta, sobre uso de dados ou pedidos de remoção:
+      <a href="mailto:CONTATO@EXEMPLO.COM">CONTATO@EXEMPLO.COM</a>
+    </p>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <nav>
+    <a href="terms.html">Termos de Serviço</a>
+    <a href="privacy.html">Política de Privacidade</a>
+  </nav>
+  <p class="fine">Atualizado em 4 de setembro de 2026.</p>
+</footer>
+
+</body>
+</html>

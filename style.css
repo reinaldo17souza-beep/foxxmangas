@@ -1,0 +1,130 @@
+/* Mesma linguagem visual dos quadros do Short: fundo escuro, faixa vermelha,
+   tipografia pesada. A auditoria abre estas páginas, e coerência entre o app,
+   o ícone e o site é parte do que ela olha. */
+
+:root {
+  --preto: #12100f;
+  --creme: #f5f1ec;
+  --vermelho: #e8483c;
+  --suave: #a9a29b;
+  --linha: #2a2624;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--preto);
+  color: var(--creme);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+header {
+  position: relative;
+  padding: 72px 0 48px;
+  border-bottom: 1px solid var(--linha);
+  margin-bottom: 48px;
+}
+
+.rail {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 8px;
+  height: 100%;
+  background: var(--vermelho);
+}
+
+.eyebrow {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--vermelho);
+  margin-bottom: 12px;
+}
+
+.eyebrow a { color: inherit; }
+
+h1 {
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 12px;
+}
+
+.lead {
+  font-size: 19px;
+  color: var(--suave);
+  max-width: 56ch;
+}
+
+section { margin-bottom: 44px; }
+section p + p { margin-top: 14px; }
+
+ul {
+  list-style: none;
+  margin-top: 14px;
+}
+
+li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 14px;
+  color: var(--suave);
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 8px;
+  height: 3px;
+  border-radius: 99px;
+  background: var(--vermelho);
+}
+
+li strong { color: var(--creme); font-weight: 600; }
+
+p { color: var(--suave); }
+section h2 + p { margin-top: 0; }
+
+a { color: var(--creme); text-decoration: underline; text-underline-offset: 3px; }
+a:hover { color: var(--vermelho); }
+
+footer {
+  border-top: 1px solid var(--linha);
+  padding: 32px 0 72px;
+  margin-top: 24px;
+}
+
+footer nav {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.fine { font-size: 14px; color: #6f6862; }
+
+@media (max-width: 560px) {
+  h1 { font-size: 34px; }
+  header { padding: 48px 0 36px; }
+}
